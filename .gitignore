@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local runtime state
+data/
+reports/
+.streamlit/
+.env
+.env.*
+
+# Tooling caches and local scratch files
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+work/
+submission_package/qa/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
