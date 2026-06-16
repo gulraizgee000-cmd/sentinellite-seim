@@ -1,0 +1,8 @@
+timestamp,host,event_id,level,provider,user,source_ip,message
+2026-05-12 09:00:20,win-lab-01,4624,Information,Microsoft-Windows-Security-Auditing,gulraiz,192.0.2.10,An account was successfully logged on
+2026-05-12 09:03:01,win-lab-01,4625,Warning,Microsoft-Windows-Security-Auditing,administrator,198.51.100.150,An account failed to log on
+2026-05-12 09:03:19,win-lab-01,4625,Warning,Microsoft-Windows-Security-Auditing,administrator,198.51.100.150,An account failed to log on
+2026-05-12 09:03:38,win-lab-01,4625,Warning,Microsoft-Windows-Security-Auditing,administrator,198.51.100.150,An account failed to log on
+2026-05-12 09:06:12,win-lab-01,4688,Warning,Microsoft-Windows-Security-Auditing,gulraiz,192.0.2.10,Process created: powershell.exe -NoProfile -ExecutionPolicy Bypass -EncodedCommand SAFE_SAMPLE_ONLY
+2026-05-12 09:08:44,win-lab-01,1102,Critical,Microsoft-Windows-Eventlog,administrator,192.0.2.20,The audit log was cleared
+2026-05-12 09:13:20,win-lab-01,4688,Information,Microsoft-Windows-Security-Auditing,gulraiz,192.0.2.10,Process created: notepad.exe
