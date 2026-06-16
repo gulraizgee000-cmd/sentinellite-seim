@@ -1,0 +1,16 @@
+alert_name,source_ip,expected_count
+SQL injection probe,203.0.113.45,1
+SQL injection probe,198.51.100.77,1
+Path traversal probe,203.0.113.45,1
+Suspicious scanning user agent,203.0.113.45,1
+Suspicious scanning user agent,203.0.113.88,1
+Suspicious scanning user agent,198.51.100.77,1
+Repeated 404 probing,198.51.100.23,1
+Repeated 404 probing,203.0.113.88,1
+Authentication brute-force burst,198.51.100.99,1
+Authentication brute-force burst,203.0.113.70,1
+Authentication brute-force burst,198.51.100.150,1
+Successful login after failures,203.0.113.70,1
+Suspicious PowerShell execution,192.0.2.10,1
+Audit log cleared,192.0.2.20,1
+Port scan pattern,198.51.100.200,1
