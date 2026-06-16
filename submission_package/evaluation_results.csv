@@ -1,0 +1,16 @@
+alert_name,source_ip,expected_count,actual_count,matched,status
+SQL injection probe,203.0.113.45,1,1,1,pass
+SQL injection probe,198.51.100.77,1,1,1,pass
+Path traversal probe,203.0.113.45,1,1,1,pass
+Suspicious scanning user agent,203.0.113.45,1,1,1,pass
+Suspicious scanning user agent,203.0.113.88,1,1,1,pass
+Suspicious scanning user agent,198.51.100.77,1,1,1,pass
+Repeated 404 probing,198.51.100.23,1,1,1,pass
+Repeated 404 probing,203.0.113.88,1,1,1,pass
+Authentication brute-force burst,198.51.100.99,1,1,1,pass
+Authentication brute-force burst,203.0.113.70,1,1,1,pass
+Authentication brute-force burst,198.51.100.150,1,1,1,pass
+Successful login after failures,203.0.113.70,1,1,1,pass
+Suspicious PowerShell execution,192.0.2.10,1,1,1,pass
+Audit log cleared,192.0.2.20,1,1,1,pass
+Port scan pattern,198.51.100.200,1,1,1,pass

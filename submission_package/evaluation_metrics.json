@@ -1,0 +1,10 @@
+{
+  "expected_groups": 15,
+  "actual_groups": 15,
+  "matched_groups": 15,
+  "false_positive_groups": 0,
+  "false_negative_groups": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0
+}
