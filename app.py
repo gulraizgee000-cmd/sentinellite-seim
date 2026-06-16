@@ -141,8 +141,16 @@ def _load_logs(use_samples: bool, uploaded_files) -> pd.DataFrame:
 def _header(logs: pd.DataFrame, alerts: pd.DataFrame, anomalies: pd.DataFrame, metrics: dict, run_id: str) -> None:
     critical = int((alerts["severity"] == "critical").sum()) if not alerts.empty else 0
     high = int((alerts["severity"] == "high").sum()) if not alerts.empty else 0
+    medium = int((alerts["severity"] == "medium").sum()) if not alerts.empty else 0
     risk = "Critical" if critical else "High" if high else "Guarded" if len(alerts) else "Clean"
     risk_class = risk.lower()
+    risk_basis = (
+        f"{critical} critical, {high} high alerts"
+        if critical or high
+        else f"{medium} medium alerts"
+        if medium
+        else "No active alerts"
+    )
     st.markdown(
         f"""
         <section class="hero">
@@ -152,8 +160,9 @@ def _header(logs: pd.DataFrame, alerts: pd.DataFrame, anomalies: pd.DataFrame, m
             <p>Rule-based threat detection, Isolation Forest anomaly scoring, forensic log review, and report-ready evidence for the Information Security project.</p>
           </div>
           <div class="status-card {risk_class}">
-            <span>Current Risk</span>
+            <span>Dataset Risk</span>
             <strong>{risk}</strong>
+            <small>{risk_basis}</small>
             <small>Run {run_id}</small>
           </div>
         </section>
